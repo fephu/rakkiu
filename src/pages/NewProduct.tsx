@@ -18,7 +18,6 @@ const NewProduct = () => {
                 img={product.img}
                 name={product.name}
                 price={product.price}
-                isNew={true}
               />
             );
           })}

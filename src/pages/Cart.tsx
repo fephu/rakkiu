@@ -17,7 +17,7 @@ const FormSchema = z.object({
 });
 
 const Cart = () => {
-  const { items, total, applyDiscount } = useCart();
+  const { items, total } = useCart();
 
   const [appliedVouchers, setAppliedVouchers] = useState<string[]>([]);
   const [message, setMessage] = useState<string>("");
@@ -47,7 +47,6 @@ const Cart = () => {
 
     if (validVouchers[data.name]) {
       setAppliedVouchers([...appliedVouchers, data.name]);
-      applyDiscount(data.name);
       setMessage(
         `Mã giảm giá hợp lệ! Bạn được giảm ${validVouchers[data.name]}%`
       );

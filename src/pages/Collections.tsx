@@ -6,7 +6,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 const Collections = () => {
-  const [active, setActive] = useState<string>("SS24");
+  const [active] = useState<string>("SS24");
 
   return (
     <MaxWidthWrapper>

@@ -2,11 +2,9 @@ import { useState } from "react";
 import {
   CommandDialog,
   CommandEmpty,
-  CommandGroup,
   CommandInput,
   CommandItem,
   CommandList,
-  CommandSeparator,
 } from "./ui/command";
 import { BiSearch } from "react-icons/bi";
 import { allProduct } from "@/db";

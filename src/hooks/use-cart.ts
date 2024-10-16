@@ -20,7 +20,6 @@ type CartState = {
   total: number;
   discount: number;
   addItem: (product: Product) => void;
-  applyDiscount: (code: string) => void;
   increaseQuantity: (productId: string, size: string) => void;
   decreaseQuantity: (productId: string, size: string) => void;
   removeItem: (productId: string, size: string) => void;
@@ -33,15 +32,7 @@ export const useCart = create<CartState>()(
       items: [],
       total: 0,
       discount: 0,
-      applyDiscount: (code) =>
-        set((state) => {
-          const validVouchers: { [key: string]: number } = {
-            new44: 5,
-            customer: 10,
-          };
 
-          return { discount: validVouchers[code] || 0 };
-        }),
       addItem: (product) =>
         set((state) => {
           const isItemInCart = state.items.find(

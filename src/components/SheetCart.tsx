@@ -4,7 +4,6 @@ import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
 import { Link } from "react-router-dom";
 import { Button, buttonVariants } from "./ui/button";
 import { useCart } from "@/hooks/use-cart";
-import { useEffect, useState } from "react";
 import { GoTrash } from "react-icons/go";
 import { Minus, Plus } from "lucide-react";
 import { HiArrowLongLeft } from "react-icons/hi2";
@@ -17,11 +16,11 @@ const SheetCart = () => {
 
   const itemCount = items.length;
 
-  const [isMounted, setIsMounted] = useState<boolean>(false);
+  // const [isMounted, setIsMounted] = useState<boolean>(false);
 
-  useEffect(() => {
-    setIsMounted(true);
-  }, []);
+  // useEffect(() => {
+  //   setIsMounted(true);
+  // }, []);
 
   return (
     <Sheet>
