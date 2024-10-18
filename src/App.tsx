@@ -25,11 +25,7 @@ const App = () => {
       <main className="flex flex-col min-h-screen bg-white pt-20">
         <div className="flex-1 flex flex-col h-full relative">
           <Routes>
-            <Route
-              path="/"
-              element={<Home />}
-              loader={() => import("./pages/Lookbook")}
-            />
+            <Route path="/" element={<Home />} />
             <Route path="/best-seller" element={<BestSeller />} />
             <Route path="/lookbook" element={<Lookbook />} />
 

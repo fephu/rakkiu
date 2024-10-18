@@ -36,7 +36,7 @@ const Checkout = () => {
         </span>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-x-4 gap-y-8 mt-6">
-        <div className="col-span-1 sm:col-span-2 border border-gray-900 px-8 py-4">
+        <div className="col-span-1 sm:col-span-2 border border-gray-900 p-4">
           <h1 className="text-base uppercase h-10 tracking-tight">
             billing details
           </h1>
@@ -125,7 +125,7 @@ const Checkout = () => {
           )}
           <div className="pb-4 text-xs flex items-center justify-between border-b border-gray-900">
             <span>Shipping</span>
-            <span className="text-blue-600">
+            <span className="text-blue-600 max-w-52 text-end">
               Vietnam: Recipient pays for shipping service at the time of
               delivery.
             </span>

@@ -85,6 +85,15 @@
   opacity: 1;
 }
 
+@media (max-width: 768px) {
+  .img-container:hover .default-img {
+    opacity: 1;
+  }
+  .img-container:hover .hover-img {
+    opacity: 0;
+  }
+}
+
 html {
   overflow: scroll;
 }

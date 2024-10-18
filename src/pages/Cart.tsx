@@ -80,8 +80,8 @@ const Cart = () => {
         <div className="col-span-1 sm:col-span-2">
           <ProductCartTable products={items} />
         </div>
-        <div className="border border-gray-900 px-6 py-4 col-span-1 w-full h-fit">
-          <h1 className="text-base uppercase border-b border-gray-900 h-8 tracking-tight">
+        <div className="border border-gray-900 p-4 col-span-1 w-full h-fit">
+          <h1 className="text-base uppercase border-b border-gray-900 h-8 tracking-tight font-semibold">
             Cart totals
           </h1>
 
@@ -92,7 +92,7 @@ const Cart = () => {
             </div>
             <div className="flex items-center justify-between">
               <span className="text-sm">Shipping</span>
-              <span className="text-sm text-muted-foreground">
+              <span className="text-xs text-muted-foreground text-end max-w-52">
                 Shipping options will be updated during checkout.
               </span>
             </div>

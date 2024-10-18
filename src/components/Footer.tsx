@@ -29,7 +29,7 @@ const Footer = () => {
         <BiLogoTiktok className="size-5" />
       </div>
 
-      <div className="flex items-center gap-4">
+      <div className="flex items-center gap-4 max-w-sm flex-wrap justify-center px-9 sm:px-0">
         <Link
           to={"/privacy-policy"}
           className="uppercase hover:text-zinc-600 text-sm tracking-tight hover:underline"

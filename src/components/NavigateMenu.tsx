@@ -70,9 +70,9 @@ const NavigateMenu = () => {
               {features.map((item) => (
                 <Link
                   to={`/${item}`}
+                  key={item}
                   className="uppercase px-4 py-2 text-sm"
                   reloadDocument
-                  key={item}
                 >
                   {item}
                 </Link>

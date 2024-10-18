@@ -6,7 +6,6 @@ import { Button, buttonVariants } from "./ui/button";
 import { useCart } from "@/hooks/use-cart";
 import { GoTrash } from "react-icons/go";
 import { Minus, Plus } from "lucide-react";
-import { HiArrowLongLeft } from "react-icons/hi2";
 import { formatPrice } from "@/lib/utils";
 import { ScrollArea } from "./ui/scroll-area";
 
@@ -15,12 +14,6 @@ const SheetCart = () => {
     useCart();
 
   const itemCount = items.length;
-
-  // const [isMounted, setIsMounted] = useState<boolean>(false);
-
-  // useEffect(() => {
-  //   setIsMounted(true);
-  // }, []);
 
   return (
     <Sheet>
@@ -42,7 +35,7 @@ const SheetCart = () => {
                   <img
                     src={item.product.image[0]}
                     alt="Product image"
-                    className="w-1/3"
+                    className="w-1/3 object-cover"
                   />
                   <div className="flex flex-col gap-2 py-8 px-2 w-full">
                     <span className="line-clamp-1">{item.product.name}</span>
@@ -95,7 +88,7 @@ const SheetCart = () => {
                 to={"/cart"}
                 className={buttonVariants({
                   className:
-                    "rounded-none w-full uppercase font-normal tracking-wide text-sm",
+                    "rounded-none w-full uppercase font-normal tracking-wide text-sm h-8",
                 })}
                 reloadDocument
               >
@@ -106,7 +99,7 @@ const SheetCart = () => {
                 to={"/checkout"}
                 className={buttonVariants({
                   className:
-                    "rounded-none w-full uppercase font-normal tracking-wide text-sm",
+                    "rounded-none w-full uppercase font-normal tracking-wide text-sm h-8",
                 })}
                 reloadDocument
               >
@@ -120,14 +113,13 @@ const SheetCart = () => {
             <Link
               to={"/all"}
               className={buttonVariants({
-                variant: "outline",
+                variant: "link",
                 className:
                   "rounded-none uppercase font-normal text-sm gap-2 border-gray-900",
                 size: "sm",
               })}
               reloadDocument
             >
-              <HiArrowLongLeft className="size-4" />
               Continue shopping
             </Link>
           </div>
