@@ -7,7 +7,7 @@ const MobileNav = () => {
   return (
     <Sheet>
       <SheetTrigger>
-        <BiMenu className="size-8" />
+        <BiMenu className="size-6" />
       </SheetTrigger>
       <SheetContent side={"left"}>
         <div className="flex flex-col gap-4 mt-2">

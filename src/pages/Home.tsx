@@ -6,14 +6,14 @@ import markImg from "@/assets/mark.webp";
 import videoSrc from "@/assets/3.mp4";
 
 import NewArrivalsCarousel from "@/components/NewArrivalsCarousel";
-
+import { LazyMotion, domAnimation } from "framer-motion";
 const Home = () => {
   return (
-    <>
+    <LazyMotion features={domAnimation}>
       <MaxWidthWrapper>
         <img src={backgroundHome} alt="Background image" />
-        <div className="max-w-sm mx-auto py-10">
-          <img src={markImg} alt="" className="w-full" />
+        <div className="max-w-sm mx-auto py-10 flex items-center justify-center">
+          <img src={markImg} alt="" className="w-1/2 sm:w-full" />
         </div>
 
         <video autoPlay muted loop id="myVideo">
@@ -29,7 +29,7 @@ const Home = () => {
 
         <img src={backgroundHome1} alt="" />
       </MaxWidthWrapper>
-    </>
+    </LazyMotion>
   );
 };
 

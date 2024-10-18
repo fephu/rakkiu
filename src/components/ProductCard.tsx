@@ -1,17 +1,21 @@
+import { quantityOfProduct } from "@/db";
 import { formatPrice } from "@/lib/utils";
 import { Link } from "react-router-dom";
 
 interface ProductCardProps {
+  id: string;
   img: string[];
   name: string;
   price: number;
 }
 
-const ProductCard = ({ img, name, price }: ProductCardProps) => {
+const ProductCard = ({ id, img, name, price }: ProductCardProps) => {
+  const isSoldOut = quantityOfProduct.find((item) => item.id === id);
+
   return (
     <Link
       to={`/product/${name.toLowerCase().replace(/\s/g, "-")}`}
-      className="flex flex-col items-center text-center"
+      className="flex flex-col items-center text-center relative"
       reloadDocument
     >
       <div className="relative flex items-center justify-center w-full z-0 img-container">
@@ -28,6 +32,14 @@ const ProductCard = ({ img, name, price }: ProductCardProps) => {
           className="w-full absolute top-0 opacity-0 hover-img"
         />
       </div>
+
+      {!isSoldOut && (
+        <div className="absolute left-0 bottom-14">
+          <span className="bg-black text-white px-2 py-1 rounded-md uppercase text-xs">
+            Sold out
+          </span>
+        </div>
+      )}
 
       <div className="flex flex-col gap-1">
         <span className="text-gray-900 text-sm line-clamp-1">{name}</span>

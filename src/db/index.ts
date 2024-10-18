@@ -439,6 +439,46 @@ export const allProduct = [
 export const quantityOfProduct = [
   {
     id: "1",
+    size: "1",
+    quantiy: 10,
+  },
+  {
+    id: "1",
+    size: "2",
+    quantiy: 10,
+  },
+  {
+    id: "2",
+    size: "2",
+    quantiy: 10,
+  },
+  {
+    id: "3",
+    size: "2",
+    quantiy: 10,
+  },
+  {
+    id: "4",
+    size: "2",
+    quantiy: 10,
+  },
+  {
+    id: "5",
+    size: "F",
+    quantiy: 10,
+  },
+  {
+    id: "6",
+    size: "2",
+    quantiy: 10,
+  },
+  {
+    id: "7",
+    size: "1",
+    quantiy: 10,
+  },
+  {
+    id: "7",
     size: "2",
     quantiy: 10,
   },

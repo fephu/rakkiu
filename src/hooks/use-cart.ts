@@ -48,8 +48,6 @@ export const useCart = create<CartState>()(
                 : item
             );
 
-            console.log(updatedCart);
-
             return {
               items: updatedCart,
               total: updatedCart.reduce(

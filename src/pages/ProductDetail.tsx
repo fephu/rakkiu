@@ -4,24 +4,22 @@ import { Button } from "@/components/ui/button";
 import { useCart } from "@/hooks/use-cart";
 import ProductCard from "@/components/ProductCard";
 
-import { useRef, useState } from "react";
+import { useState } from "react";
 import { useParams } from "react-router-dom";
 import { allProduct, quantityOfProduct } from "@/db";
 import { formatPrice } from "@/lib/utils";
-import { Pause, Play, X } from "lucide-react";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
-import Autoplay from "embla-carousel-autoplay";
+
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
+import ProductCarousel from "@/components/ProductCarousel";
 
 const ProductDetail = () => {
   const { addItem } = useCart();
   const [model, setModel] = useState<string>("");
+
+  const handleStateChange = (newState: string) => {
+    setModel(newState);
+  };
+
   const [isLoading, setIsLoading] = useState<boolean>(false);
 
   const { id } = useParams();
@@ -36,8 +34,7 @@ const ProductDetail = () => {
   const handleChangeSize = (e: any) => {
     setSelectedSize(e.target.value);
     const notSoldOut = quantityOfProduct.find(
-      (item) =>
-        item.id === product?.id && item.size === product.sizes[e.target.value]
+      (item) => item.id === product?.id && item.size === e.target.value
     );
 
     if (notSoldOut) {
@@ -82,66 +79,14 @@ const ProductDetail = () => {
     }
   };
 
-  const plugin = useRef(Autoplay({ delay: 3000, playOnInit: false }));
-  const [isPlaying, setIsPlaying] = useState(false);
-
-  const toggleAutoplay = () => {
-    if (plugin.current.isPlaying()) {
-      setIsPlaying(false);
-      plugin.current.stop();
-      plugin.current.reset();
-    } else {
-      setIsPlaying(true);
-      plugin.current.play();
-    }
-  };
-
   return (
     <>
       {model !== "" && (
         <div className="fixed top-0 inset-x-0 w-full h-screen flex justify-center items-center bg-white z-[999]">
-          <div className="absolute top-4 right-4 flex items-center bg-white z-50 border border-gray-500">
-            <Button variant={"ghost"} size={"sm"} onClick={toggleAutoplay}>
-              {isPlaying ? (
-                <Pause className="size-6" />
-              ) : (
-                <Play className="size-6" />
-              )}
-            </Button>
-            <Button
-              variant={"ghost"}
-              size={"sm"}
-              onClick={() => {
-                setModel("");
-                setIsPlaying(false);
-              }}
-            >
-              <X className="size-6" />
-            </Button>
-          </div>
-          <Carousel plugins={[plugin.current]}>
-            <CarouselContent>
-              {product &&
-                product.img &&
-                product.img.map((item, i) => (
-                  <CarouselItem key={i}>
-                    <img
-                      src={item}
-                      alt=""
-                      className="w-full sm:w-1/2 mx-auto object-cover"
-                    />
-                  </CarouselItem>
-                ))}
-            </CarouselContent>
-            <CarouselPrevious
-              variant={"ghost"}
-              className="hidden sm:flex left-2 size-12"
-            />
-            <CarouselNext
-              variant={"ghost"}
-              className=" hidden sm:flex right-2 size-12"
-            />
-          </Carousel>
+          <ProductCarousel
+            images={(product && product.img) ?? []}
+            onChangeState={handleStateChange}
+          />
         </div>
       )}
       {product && (
@@ -219,16 +164,22 @@ const ProductDetail = () => {
       <MaxWidthWrapper>
         <div className="flex flex-col py-10 border-t">
           <h1 className="uppercase text-lg pl-8">Related products</h1>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 w-full gap-x-8 gap-y-6">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 w-full gap-x-8 gap-y-6">
             {allProduct &&
-              allProduct.map((product, i) => (
-                <ProductCard
-                  key={i}
-                  img={product.img}
-                  name={product.name}
-                  price={product.price}
-                />
-              ))}
+              allProduct.map((product, i) => {
+                if (i > 4) {
+                  return;
+                }
+                return (
+                  <ProductCard
+                    key={i}
+                    img={product.img}
+                    name={product.name}
+                    price={product.price}
+                    id={product.id}
+                  />
+                );
+              })}
           </div>
         </div>
       </MaxWidthWrapper>

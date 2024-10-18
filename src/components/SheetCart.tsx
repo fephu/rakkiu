@@ -26,11 +26,11 @@ const SheetCart = () => {
     <Sheet>
       <SheetTrigger>
         <div className="flex items-center gap-1">
-          <BiShoppingBag className="size-8 cursor-pointer" />
+          <BiShoppingBag className="size-6 sm:size-8 cursor-pointer" />
           {itemCount !== 0 && <div className="">{itemCount}</div>}
         </div>
       </SheetTrigger>
-      <SheetContent className="pr-0">
+      <SheetContent className="px-0">
         <h1 className="text-center text-lg uppercase font-semibold border-b border-gray-300 h-10">
           Cart
         </h1>

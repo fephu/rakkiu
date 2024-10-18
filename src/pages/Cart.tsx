@@ -57,27 +57,27 @@ const Cart = () => {
 
   return (
     <MaxWidthWrapper className="py-6">
-      <div className="flex items-center gap-1 justify-center">
+      <div className="flex items-center gap-1 justify-center w-full">
         <Link
           to={"/cart"}
-          className="uppercase text-sm text-gray-950 font-semibold"
+          className="uppercase text-xs text-gray-950 font-semibold"
         >
           shopping cart
         </Link>
-        <ChevronRight className="size-5 text-muted-foreground" />
+        <ChevronRight className="size-4 text-muted-foreground" />
         <Link
           to={"/checkout"}
-          className="uppercase text-sm text-muted-foreground"
+          className="uppercase text-xs text-muted-foreground"
         >
           Checkout details
         </Link>
-        <ChevronRight className="size-5 text-muted-foreground" />
-        <span className="uppercase text-sm text-muted-foreground">
+        <ChevronRight className="size-4 text-muted-foreground" />
+        <span className="uppercase text-xs text-muted-foreground">
           order complete
         </span>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-x-10 gap-y-8 mt-6">
-        <div className="col-span-2">
+        <div className="col-span-1 sm:col-span-2">
           <ProductCartTable products={items} />
         </div>
         <div className="border border-gray-900 px-6 py-4 col-span-1 w-full h-fit">
@@ -134,7 +134,10 @@ const Cart = () => {
             <div className="flex items-center gap-4 border-b border-gray-900 h-10">
               <span className="uppercase text-sm">voucher</span>
 
-              <div className="flex items-center text-sm gap-1 border border-gray-200 p-1 rounded-sm cursor-pointer">
+              <div
+                onClick={() => applyVoucher({ name: "new44" })}
+                className="flex items-center text-sm gap-1 border border-gray-200 p-1 rounded-sm cursor-pointer"
+              >
                 <IoIosPricetag className="size-4" />
                 new44
               </div>

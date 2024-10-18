@@ -12,6 +12,7 @@ const AllProduct = () => {
         {allProduct &&
           allProduct.map((product) => (
             <ProductCard
+              id={product.id}
               key={product.id}
               img={product.img}
               name={product.name}

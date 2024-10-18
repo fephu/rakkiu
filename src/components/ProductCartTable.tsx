@@ -29,13 +29,13 @@ const ProductCartTable = ({ products }: ProductCartTableProps) => {
             Product
           </TableHead>
 
-          <TableHead className="uppercase text-center font-normal text-gray-900">
+          <TableHead className="uppercase text-center font-normal text-gray-900 hidden sm:table-cell">
             Price
           </TableHead>
           <TableHead className="uppercase text-center font-normal text-gray-900">
             Quantity
           </TableHead>
-          <TableHead className="uppercase text-center font-normal text-gray-900">
+          <TableHead className="uppercase text-center font-normal text-gray-900 hidden sm:table-cell">
             Total
           </TableHead>
         </TableRow>
@@ -45,7 +45,7 @@ const ProductCartTable = ({ products }: ProductCartTableProps) => {
           <TableRow>
             <TableCell className="flex items-center gap-4">
               <GoTrash
-                className="size-5 cursor-pointer"
+                className="size-5 cursor-pointer hidden sm:block"
                 onClick={() =>
                   removeItem(product.product.id, product.product.size)
                 }
@@ -63,7 +63,9 @@ const ProductCartTable = ({ products }: ProductCartTableProps) => {
                 <span>Size {product.product.size}</span>
               </div>
             </TableCell>
-            <TableCell>{formatPrice(product.product.price)}đ</TableCell>
+            <TableCell className="hidden sm:table-cell">
+              {formatPrice(product.product.price)}đ
+            </TableCell>
             <TableCell>
               <div className="flex items-center gap-2 border border-gray-900">
                 <Button
@@ -87,7 +89,7 @@ const ProductCartTable = ({ products }: ProductCartTableProps) => {
                 </Button>
               </div>
             </TableCell>
-            <TableCell>
+            <TableCell className="hidden sm:table-cell">
               {formatPrice(product.product.price * product.quantity)}đ
             </TableCell>
           </TableRow>

@@ -19,6 +19,7 @@ const ProductCategory = () => {
             img={product.img}
             name={product.name}
             price={product.price}
+            id={product.id}
           />
         ))}
       </div>

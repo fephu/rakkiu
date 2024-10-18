@@ -14,7 +14,7 @@ const Navbar = () => {
       <div className="fixed top-0 inset-x-0 h-20 bg-white/75 backdrop-blur-lg transition-all z-50">
         <Link to="/" className="flex items-center justify-center z-[100]">
           <div className="fixed top-0 cursor-pointer">
-            <img src={logoImg} alt="Logo" className="w-40" />
+            <img src={logoImg} alt="Logo" className="w-[9rem] sm:w-[10rem]" />
           </div>
         </Link>
         <MaxWidthWrapper>
@@ -27,7 +27,7 @@ const Navbar = () => {
             <div className="flex sm:hidden">
               <MobileNav />
             </div>
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-2 sm:gap-4">
               <SearchCommand />
               <SheetCart />
             </div>
