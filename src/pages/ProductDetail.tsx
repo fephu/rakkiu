@@ -11,6 +11,7 @@ import { formatPrice } from "@/lib/utils";
 
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
 import ProductCarousel from "@/components/ProductCarousel";
+import { toast } from "sonner";
 
 const ProductDetail = () => {
   const { addItem } = useCart();
@@ -59,11 +60,11 @@ const ProductDetail = () => {
   }) => {
     setIsLoading(true);
     if (selectedSize === "-1" || selectedSize === "") {
-      alert("Please select the size.");
+      toast.error("Please select the size.");
       setIsLoading(false);
     } else {
       if (message === "Out of stock") {
-        alert("Out of stock");
+        toast.warning("Out of stock");
         setIsLoading(false);
       } else {
         addItem({
@@ -92,13 +93,13 @@ const ProductDetail = () => {
       {product && (
         <MaxWidthWrapper className="relative flex flex-col sm:flex-row">
           <div className="relative w-full">
-            <div className="sticky top-48 flex flex-col gap-2 pb-10 pt-10 sm:pt-0">
+            <div className="sticky top-56 flex flex-col gap-2 pb-10 pt-10 sm:pt-0">
               <span className="font-semibold">{product.name}</span>
               <span className="text-sm">{product.description}</span>
               <span className="text-sm">100% cotton.</span>
             </div>
           </div>
-          <div className="max-w-3xl mx-auto flex flex-row md:flex-col justify-center pb-10 gap-8 overflow-y-scroll mt-0 sm:mt-14">
+          <div className="max-w-3xl mx-auto flex flex-row md:flex-col justify-center mb-10 gap-8 overflow-y-scroll mt-0 sm:mt-14">
             {product.img.map((src) => (
               <img
                 src={src}
@@ -114,7 +115,7 @@ const ProductDetail = () => {
           </div>
 
           <div className="relative w-full pl-0 sm:pl-10">
-            <div className="sticky top-48 flex flex-col gap-2 w-full pb-10">
+            <div className="sticky top-56 flex flex-col gap-2 w-full pb-10">
               <span>{formatPrice(product.price)} đ</span>
               <SizeGuide />
 
@@ -140,7 +141,7 @@ const ProductDetail = () => {
               )}
 
               <Button
-                className="uppercase rounded-none mt-2 w-fit text-sm px-8"
+                className="uppercase rounded-none mt-2 w-fit text-xs px-6"
                 onClick={() =>
                   onAddItem({
                     id: product.id,
@@ -150,6 +151,7 @@ const ProductDetail = () => {
                     price: product.price,
                   })
                 }
+                size={"sm"}
               >
                 {isLoading ? (
                   <AiOutlineLoading3Quarters className="animate-spin" />
@@ -162,8 +164,10 @@ const ProductDetail = () => {
         </MaxWidthWrapper>
       )}
       <MaxWidthWrapper>
-        <div className="flex flex-col py-10 border-t">
-          <h1 className="uppercase text-lg pl-8">Related products</h1>
+        <div className="flex flex-col py-4 border-t">
+          <h1 className="uppercase text-base sm:text-lg p-2 sm:p-4">
+            Related products
+          </h1>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 w-full gap-x-8 gap-y-6">
             {allProduct &&
               allProduct.map((product, i) => {

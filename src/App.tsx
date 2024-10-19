@@ -16,7 +16,7 @@ import Checkout from "./pages/Checkout";
 import ProductCategory from "./pages/ProductCategory";
 import LookbookDetail from "./pages/LookbookDetail";
 import NewProduct from "./pages/NewProduct";
-import Collections from "./pages/Collections";
+import CollectionList from "./pages/CollectionList";
 
 const App = () => {
   return (
@@ -38,9 +38,12 @@ const App = () => {
 
             <Route path=":category" element={<ProductCategory />} />
 
+            <Route path="/collection">
+              <Route path=":id" element={<CollectionList />} />
+            </Route>
+
             <Route path="/news" element={<News />} />
             <Route path="/new" element={<NewProduct />} />
-            <Route path="/collections" element={<Collections />} />
             <Route path="/all" element={<AllProduct />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/store" element={<Store />} />

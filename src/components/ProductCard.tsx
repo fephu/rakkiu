@@ -42,9 +42,11 @@ const ProductCard = ({ id, img, name, price }: ProductCardProps) => {
       )}
 
       <div className="flex flex-col gap-1">
-        <span className="text-gray-900 text-sm line-clamp-1">{name}</span>
+        <span className="text-gray-900 text-xs sm:text-sm line-clamp-1">
+          {name}
+        </span>
 
-        <span className="text-sm">{formatPrice(price)} đ</span>
+        <span className="text-xs sm:text-sm">{formatPrice(price)} đ</span>
       </div>
     </Link>
   );

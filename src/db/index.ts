@@ -168,6 +168,7 @@ export const allProduct = [
     description: "Cotton jersey polo.",
     sizes: ["1", "2"],
     category: "tops",
+    collection: "ss24",
   },
   {
     id: "2",
@@ -177,6 +178,7 @@ export const allProduct = [
     description: "Cotton jersey polo.",
     sizes: ["1", "2"],
     category: "tops",
+    collection: "ss24",
   },
   {
     id: "3",
@@ -186,6 +188,7 @@ export const allProduct = [
     description: "Cotton jersey polo.",
     sizes: ["1", "2"],
     category: "tops",
+    collections: "ss24",
   },
   {
     id: "4",
@@ -195,6 +198,7 @@ export const allProduct = [
     description: "Cotton jersey polo.",
     sizes: ["1", "2"],
     category: "tops",
+    collection: "ss24",
   },
   {
     id: "5",
@@ -215,6 +219,7 @@ export const allProduct = [
     description: "",
     sizes: ["F"],
     category: "headwear",
+    collection: "ss24",
   },
   {
     id: "6",
@@ -233,6 +238,7 @@ export const allProduct = [
     description: "Relaxed-fit cotton twill cargo pants in camo.",
     sizes: ["1", "2"],
     category: "bottoms",
+    collection: "ss24",
   },
   {
     id: "7",
@@ -250,6 +256,7 @@ export const allProduct = [
     description: "Relaxed-fit cotton twill cargo pants in black.",
     sizes: ["1", "2"],
     category: "bottoms",
+    collection: "ss24",
   },
   {
     id: "8",
@@ -267,6 +274,7 @@ export const allProduct = [
     description: "Relaxed-fit cotton twill cargo camo shorts.",
     sizes: ["1", "2"],
     category: "bottoms",
+    collection: "ss24",
   },
   {
     id: "9",
@@ -283,6 +291,7 @@ export const allProduct = [
     description: "Short sleeve stretch wool twill shirt.",
     sizes: ["1", "2"],
     category: "tops",
+    collection: "ss24",
   },
   {
     id: "10",
@@ -305,6 +314,7 @@ export const allProduct = [
       "Denim twill cap in washed black. Distressing effect throughout. Graphic embroidered at face.",
     sizes: ["F"],
     category: "headwear",
+    collection: "ss24",
   },
   {
     id: "11",
@@ -327,6 +337,7 @@ export const allProduct = [
       "Denim twill cap in washed black. Distressing effect throughout. Graphic embroidered at face.",
     sizes: ["F"],
     category: "headwear",
+    collection: "ss24",
   },
   {
     id: "12",
@@ -349,6 +360,7 @@ export const allProduct = [
       "Denim twill cap in washed black. Distressing effect throughout. Graphic embroidered at face.",
     sizes: ["F"],
     category: "headwear",
+    collection: "ss24",
   },
   {
     id: "13",
@@ -358,6 +370,7 @@ export const allProduct = [
     description: "Relaxed-fit wool twill shorts.",
     sizes: ["1", "2"],
     category: "bottoms",
+    collection: "ss24",
   },
   {
     id: "14",
@@ -367,6 +380,7 @@ export const allProduct = [
     description: "Relaxed-fit wool twill shorts.",
     sizes: ["1", "2"],
     category: "bottoms",
+    collection: "ss24",
   },
   {
     id: "15",
@@ -376,6 +390,7 @@ export const allProduct = [
     description: "Cotton jersey T-shirt.",
     sizes: ["1", "2"],
     category: " tees",
+    collection: "ss24",
   },
   {
     id: "16",
@@ -385,6 +400,7 @@ export const allProduct = [
     description: "Cotton jersey T-shirt.",
     sizes: ["1", "2"],
     category: "tees",
+    collection: "ss24",
   },
   {
     id: "17",
@@ -394,6 +410,7 @@ export const allProduct = [
     description: "Cotton jersey T-shirt.",
     sizes: ["1", "2"],
     category: "tees",
+    collection: "ss24",
   },
   {
     id: "18",
@@ -403,6 +420,7 @@ export const allProduct = [
     description: "Cotton jersey T-shirt.",
     sizes: ["1", "2"],
     category: "tees",
+    collection: "ss24",
   },
   {
     id: "19",
@@ -412,6 +430,7 @@ export const allProduct = [
     description: "Cotton jersey T-shirt.",
     sizes: ["1", "2"],
     category: "tees",
+    collection: "ss24",
   },
   {
     id: "20",
@@ -433,6 +452,7 @@ export const allProduct = [
       "Grained Italy cowskin jacket. Topstitching and fading throughout.",
     sizes: ["0", "1", "2", "3", "4"],
     category: "outerwear",
+    collection: "",
   },
 ];
 
