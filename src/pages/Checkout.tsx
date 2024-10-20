@@ -36,7 +36,7 @@ const Checkout = () => {
   });
 
   const onSubmit = (data: TPlaceOrderValidator) => {
-    toast.success("Order placed successfully");
+    toast.success(`Order successfully placed! ${data}`);
     router("/order-complete");
     reset();
   };
