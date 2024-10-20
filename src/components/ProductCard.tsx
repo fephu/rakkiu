@@ -35,7 +35,7 @@ const ProductCard = ({ id, img, name, price }: ProductCardProps) => {
 
       {!isSoldOut && (
         <div className="absolute left-0 bottom-14">
-          <span className="bg-black text-white px-2 py-1 rounded-md uppercase text-xs">
+          <span className="bg-black text-white px-2 py-1 rounded-md uppercase text-[0.65rem]">
             Sold out
           </span>
         </div>

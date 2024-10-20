@@ -17,6 +17,7 @@ import ProductCategory from "./pages/ProductCategory";
 import LookbookDetail from "./pages/LookbookDetail";
 import NewProduct from "./pages/NewProduct";
 import CollectionList from "./pages/CollectionList";
+import OrderComplete from "./pages/OrderComplete";
 
 const App = () => {
   return (
@@ -50,6 +51,7 @@ const App = () => {
             <Route path="/contact" element={<Contact />} />
             <Route path="/cart" element={<Cart />} />
             <Route path="/checkout" element={<Checkout />} />
+            <Route path="/order-complete" element={<OrderComplete />} />
             <Route path="/shipping-exchange" element={<ShippingExchange />} />
           </Routes>
         </div>

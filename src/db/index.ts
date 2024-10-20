@@ -27,6 +27,14 @@ import tee1next3 from "@/assets/tee/tee1-next3.webp";
 import tee1next4 from "@/assets/tee/tee1-next4.webp";
 import tee1next5 from "@/assets/tee/tee1-next5.webp";
 
+import tee7 from "@/assets/tee/tee7.webp";
+import tee7back from "@/assets/tee/tee7-back.webp";
+import tee7next1 from "@/assets/tee/tee7-next1.webp";
+import tee7next2 from "@/assets/tee/tee7-next2.webp";
+import tee7next3 from "@/assets/tee/tee7-next3.webp";
+import tee7next4 from "@/assets/tee/tee7-next4.webp";
+import tee7next5 from "@/assets/tee/tee7-next5.webp";
+
 import tee2 from "@/assets/tee/tee2.webp";
 import tee2back from "@/assets/tee/tee2-back.webp";
 import tee2next1 from "@/assets/tee/tee2-next1.webp";
@@ -69,6 +77,23 @@ import bottom2next3 from "@/assets/tee/bottom2-next3.webp";
 import bottom2next4 from "@/assets/tee/bottom2-next4.webp";
 import bottom2next5 from "@/assets/tee/bottom2-next5.webp";
 import bottom2next6 from "@/assets/tee/bottom2-next6.webp";
+
+import bottom3 from "@/assets/tee/bottom3.webp";
+import bottom3back from "@/assets/tee/bottom3-back.webp";
+import bottom3next1 from "@/assets/tee/bottom3-next1.webp";
+import bottom3next2 from "@/assets/tee/bottom3-next2.webp";
+import bottom3next3 from "@/assets/tee/bottom3-next3.webp";
+
+import bottom4 from "@/assets/tee/bottom4.webp";
+import bottom4back from "@/assets/tee/bottom4-back.webp";
+import bottom4next1 from "@/assets/tee/bottom4-next1.webp";
+import bottom4next2 from "@/assets/tee/bottom4-next2.webp";
+import bottom4next3 from "@/assets/tee/bottom4-next3.webp";
+
+import bottom5 from "@/assets/tee/bottom5.webp";
+import bottom5back from "@/assets/tee/bottom5-back.webp";
+import bottom5next1 from "@/assets/tee/bottom5-next1.webp";
+import bottom5next2 from "@/assets/tee/bottom5-next2.webp";
 
 import short1 from "@/assets/tee/short1.webp";
 import short1back from "@/assets/tee/short1-back.webp";
@@ -140,6 +165,11 @@ import shirt1next2 from "@/assets/tee/shirt1-next2.webp";
 import shirt1next3 from "@/assets/tee/shirt1-next3.webp";
 import shirt1next4 from "@/assets/tee/shirt1-next4.webp";
 
+import shirt2 from "@/assets/tee/shirt2.webp";
+import shirt2back from "@/assets/tee/shirt2-back.webp";
+import shirt2next1 from "@/assets/tee/shirt2-next1.webp";
+import shirt2next2 from "@/assets/tee/shirt2-next2.webp";
+
 import jacket1 from "@/assets/tee/jacket1.jpg";
 import jacket1back from "@/assets/tee/jacket1-back.jpg";
 import jacket1next1 from "@/assets/tee/jacket1-next1.jpg";
@@ -172,6 +202,24 @@ export const allProduct = [
   },
   {
     id: "2",
+    img: [
+      tee7,
+      tee7back,
+      tee7next1,
+      tee7next2,
+      tee7next3,
+      tee7next4,
+      tee7next5,
+    ],
+    name: "SKEW YA White Jersey Tee",
+    price: 610000,
+    description: "Polyester jersey mesh T-shirt",
+    sizes: ["1", "2"],
+    category: "tops",
+    collection: "ss24",
+  },
+  {
+    id: "3",
     img: [polo1, polo1back, polo1next1, polo1next2, polo1next3, polo1next4],
     name: "FLAGSTAFF Oversized Brown Polo",
     price: 630000,
@@ -181,7 +229,7 @@ export const allProduct = [
     collection: "ss24",
   },
   {
-    id: "3",
+    id: "4",
     img: [polo2, polo2back, polo2next1, polo2next2, polo2next3, polo2next4],
     name: "FLAGSTAFF Oversized Cream Polo",
     price: 630000,
@@ -191,7 +239,7 @@ export const allProduct = [
     collections: "ss24",
   },
   {
-    id: "4",
+    id: "5",
     img: [polo3, polo3back, polo3next1, polo3next2, polo3next3, polo3next4],
     name: "FLAGSTAFF Oversized Black Polo",
     price: 630000,
@@ -201,7 +249,7 @@ export const allProduct = [
     collection: "ss24",
   },
   {
-    id: "5",
+    id: "6",
     img: [
       cap1,
       cap1back,
@@ -222,7 +270,7 @@ export const allProduct = [
     collection: "ss24",
   },
   {
-    id: "6",
+    id: "7",
     img: [
       bottom2,
       bottom2back,
@@ -241,7 +289,7 @@ export const allProduct = [
     collection: "ss24",
   },
   {
-    id: "7",
+    id: "8",
     img: [
       bottom1,
       bottom1back,
@@ -259,7 +307,7 @@ export const allProduct = [
     collection: "ss24",
   },
   {
-    id: "8",
+    id: "9",
     img: [
       short1,
       short1back,
@@ -277,7 +325,7 @@ export const allProduct = [
     collection: "ss24",
   },
   {
-    id: "9",
+    id: "10",
     img: [
       shirt1,
       shirt1back,
@@ -294,7 +342,7 @@ export const allProduct = [
     collection: "ss24",
   },
   {
-    id: "10",
+    id: "11",
     img: [
       cap2,
       cap2back,
@@ -317,7 +365,7 @@ export const allProduct = [
     collection: "ss24",
   },
   {
-    id: "11",
+    id: "12",
     img: [
       cap3,
       cap3back,
@@ -340,7 +388,7 @@ export const allProduct = [
     collection: "ss24",
   },
   {
-    id: "12",
+    id: "13",
     img: [
       cap4,
       cap4back,
@@ -363,7 +411,7 @@ export const allProduct = [
     collection: "ss24",
   },
   {
-    id: "13",
+    id: "14",
     img: [short2, short2back, short2next1],
     name: "3SKULLS Black Shorts",
     price: 560000,
@@ -373,7 +421,7 @@ export const allProduct = [
     collection: "ss24",
   },
   {
-    id: "14",
+    id: "15",
     img: [short3, short3back, short3next1],
     name: "3SKULLS Brown Shorts",
     price: 560000,
@@ -383,7 +431,7 @@ export const allProduct = [
     collection: "ss24",
   },
   {
-    id: "15",
+    id: "16",
     img: [tee5, tee5back, tee5next1, tee5next2],
     name: "HOMEBODY Washed Gray T-Shirt",
     price: 620000,
@@ -393,7 +441,7 @@ export const allProduct = [
     collection: "ss24",
   },
   {
-    id: "16",
+    id: "17",
     img: [tee6, tee6back, tee6next1, tee6next2, tee6next3],
     name: "HOMEBODY Washed Beige T-Shirt",
     price: 620000,
@@ -403,7 +451,7 @@ export const allProduct = [
     collection: "ss24",
   },
   {
-    id: "17",
+    id: "18",
     img: [tee2, tee2back, tee2next1, tee2next2],
     name: "FULLTIME JOB White T-shirt",
     price: 530000,
@@ -413,7 +461,7 @@ export const allProduct = [
     collection: "ss24",
   },
   {
-    id: "18",
+    id: "19",
     img: [tee3, tee3back, tee3next1, tee3next2],
     name: "FULLTIME JOB Blue T-shirt",
     price: 530000,
@@ -423,7 +471,7 @@ export const allProduct = [
     collection: "ss24",
   },
   {
-    id: "19",
+    id: "20",
     img: [tee4, tee4back, tee4next1, tee4next2],
     name: "FULLTIME JOB Black T-shirt",
     price: 530000,
@@ -433,7 +481,49 @@ export const allProduct = [
     collection: "ss24",
   },
   {
-    id: "20",
+    id: "21",
+    name: "MATA Brown Tartan Trousers",
+    img: [bottom3, bottom3back, bottom3next1, bottom3next2, bottom3next3],
+
+    price: 820000,
+    description: "Relaxed-fit cotton flannel and wool twill trousers.",
+    sizes: ["1", "2"],
+    category: "bottoms",
+    collection: "fw23",
+  },
+  {
+    id: "22",
+    img: [bottom4, bottom4back, bottom4next1, bottom4next2, bottom4next3],
+    name: "MATA Red Tartan Trousers",
+    price: 820000,
+    description: "Relaxed-fit cotton flannel and wool twill trousers.",
+    sizes: ["1", "2"],
+    category: "bottoms",
+    collection: "fw23",
+  },
+  {
+    id: "23",
+    img: [shirt2, shirt2back, shirt2next1, shirt2next2],
+    name: "KABA Red Tartan Shirt",
+    price: 850000,
+    description:
+      "Double sleeve cotton flannel shirt. Check pattern and distressing effect throughout.",
+    sizes: ["1", "2"],
+    category: "shirts",
+    collection: "fw23",
+  },
+  {
+    id: "24",
+    img: [bottom5, bottom5back, bottom5next1, bottom5next2],
+    name: "MOTU MĀNU Navy Sweatpants",
+    price: 670000,
+    description: "Relaxed-fit panelled cotton sweatpants.",
+    sizes: ["1", "2"],
+    category: "shirts",
+    collection: "fw23",
+  },
+  {
+    id: "25",
     img: [
       jacket1,
       jacket1back,

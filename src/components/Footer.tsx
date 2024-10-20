@@ -32,28 +32,28 @@ const Footer = () => {
       <div className="flex items-center gap-4 max-w-sm flex-wrap justify-center px-9 sm:px-0">
         <Link
           to={"/privacy-policy"}
-          className="uppercase hover:text-zinc-600 text-sm tracking-tight hover:underline"
+          className="uppercase text-sm tracking-tight hover:underline"
           reloadDocument
         >
           Privacy Policy
         </Link>
         <Link
           to={"/shipping-exchange"}
-          className="uppercase hover:text-zinc-600 text-sm tracking-tight hover:underline"
+          className="uppercase  text-sm tracking-tight hover:underline"
           reloadDocument
         >
           Shipping&Exchange
         </Link>
         <Link
           to={"/store"}
-          className="uppercase hover:text-zinc-600 text-sm tracking-tight hover:underline"
+          className="uppercase text-sm tracking-tight hover:underline"
           reloadDocument
         >
           Store
         </Link>
         <Link
           to={"/contact"}
-          className="uppercase hover:text-zinc-600 text-sm tracking-tight hover:underline"
+          className="uppercase  text-sm tracking-tight hover:underline"
           reloadDocument
         >
           Contact
