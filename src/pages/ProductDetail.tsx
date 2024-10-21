@@ -97,6 +97,10 @@ const ProductDetail = () => {
               <span className="font-semibold">{product.name}</span>
               <span className="text-sm">{product.description}</span>
               <span className="text-sm">100% cotton.</span>
+              <span className="text-sm">
+                Color:{" "}
+                <span className="text-xs">{product.color.toUpperCase()}</span>
+              </span>
             </div>
           </div>
           <div className="max-w-3xl mx-auto flex flex-row md:flex-col justify-center mb-10 gap-8 overflow-y-scroll mt-0 sm:mt-14">

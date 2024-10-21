@@ -199,6 +199,7 @@ export const allProduct = [
     sizes: ["1", "2"],
     category: "tops",
     collection: "ss24",
+    color: "navy",
   },
   {
     id: "2",
@@ -217,6 +218,7 @@ export const allProduct = [
     sizes: ["1", "2"],
     category: "tops",
     collection: "ss24",
+    color: "white",
   },
   {
     id: "3",
@@ -227,6 +229,7 @@ export const allProduct = [
     sizes: ["1", "2"],
     category: "tops",
     collection: "ss24",
+    color: "brown",
   },
   {
     id: "4",
@@ -237,6 +240,7 @@ export const allProduct = [
     sizes: ["1", "2"],
     category: "tops",
     collections: "ss24",
+    color: "cream",
   },
   {
     id: "5",
@@ -247,6 +251,7 @@ export const allProduct = [
     sizes: ["1", "2"],
     category: "tops",
     collection: "ss24",
+    color: "black",
   },
   {
     id: "6",
@@ -268,6 +273,7 @@ export const allProduct = [
     sizes: ["F"],
     category: "headwear",
     collection: "ss24",
+    color: "black",
   },
   {
     id: "7",
@@ -287,6 +293,7 @@ export const allProduct = [
     sizes: ["1", "2"],
     category: "bottoms",
     collection: "ss24",
+    color: "camo",
   },
   {
     id: "8",
@@ -305,6 +312,7 @@ export const allProduct = [
     sizes: ["1", "2"],
     category: "bottoms",
     collection: "ss24",
+    color: "black",
   },
   {
     id: "9",
@@ -323,6 +331,7 @@ export const allProduct = [
     sizes: ["1", "2"],
     category: "bottoms",
     collection: "ss24",
+    color: "camo",
   },
   {
     id: "10",
@@ -340,6 +349,7 @@ export const allProduct = [
     sizes: ["1", "2"],
     category: "tops",
     collection: "ss24",
+    color: "brown",
   },
   {
     id: "11",
@@ -363,6 +373,7 @@ export const allProduct = [
     sizes: ["F"],
     category: "headwear",
     collection: "ss24",
+    color: "black",
   },
   {
     id: "12",
@@ -386,6 +397,7 @@ export const allProduct = [
     sizes: ["F"],
     category: "headwear",
     collection: "ss24",
+    color: "black",
   },
   {
     id: "13",
@@ -409,6 +421,7 @@ export const allProduct = [
     sizes: ["F"],
     category: "headwear",
     collection: "ss24",
+    color: "blue",
   },
   {
     id: "14",
@@ -419,6 +432,7 @@ export const allProduct = [
     sizes: ["1", "2"],
     category: "bottoms",
     collection: "ss24",
+    color: "black",
   },
   {
     id: "15",
@@ -429,6 +443,7 @@ export const allProduct = [
     sizes: ["1", "2"],
     category: "bottoms",
     collection: "ss24",
+    color: "brown",
   },
   {
     id: "16",
@@ -439,6 +454,7 @@ export const allProduct = [
     sizes: ["1", "2"],
     category: " tees",
     collection: "ss24",
+    color: "gray",
   },
   {
     id: "17",
@@ -449,6 +465,7 @@ export const allProduct = [
     sizes: ["1", "2"],
     category: "tees",
     collection: "ss24",
+    color: "beige",
   },
   {
     id: "18",
@@ -459,6 +476,7 @@ export const allProduct = [
     sizes: ["1", "2"],
     category: "tees",
     collection: "ss24",
+    color: "white",
   },
   {
     id: "19",
@@ -469,6 +487,7 @@ export const allProduct = [
     sizes: ["1", "2"],
     category: "tees",
     collection: "ss24",
+    color: "blue",
   },
   {
     id: "20",
@@ -479,17 +498,18 @@ export const allProduct = [
     sizes: ["1", "2"],
     category: "tees",
     collection: "ss24",
+    color: "black",
   },
   {
     id: "21",
     name: "MATA Brown Tartan Trousers",
     img: [bottom3, bottom3back, bottom3next1, bottom3next2, bottom3next3],
-
     price: 820000,
     description: "Relaxed-fit cotton flannel and wool twill trousers.",
     sizes: ["1", "2"],
     category: "bottoms",
     collection: "fw23",
+    color: "brown",
   },
   {
     id: "22",
@@ -500,6 +520,7 @@ export const allProduct = [
     sizes: ["1", "2"],
     category: "bottoms",
     collection: "fw23",
+    color: "red",
   },
   {
     id: "23",
@@ -511,6 +532,7 @@ export const allProduct = [
     sizes: ["1", "2"],
     category: "shirts",
     collection: "fw23",
+    color: "red",
   },
   {
     id: "24",
@@ -521,6 +543,7 @@ export const allProduct = [
     sizes: ["1", "2"],
     category: "shirts",
     collection: "fw23",
+    color: "navy",
   },
   {
     id: "25",
@@ -543,6 +566,7 @@ export const allProduct = [
     sizes: ["0", "1", "2", "3", "4"],
     category: "outerwear",
     collection: "",
+    color: "brown",
   },
 ];
 
@@ -574,12 +598,12 @@ export const quantityOfProduct = [
   },
   {
     id: "5",
-    size: "F",
+    size: "1",
     quantiy: 10,
   },
   {
     id: "6",
-    size: "2",
+    size: "F",
     quantiy: 10,
   },
   {
@@ -589,6 +613,16 @@ export const quantityOfProduct = [
   },
   {
     id: "7",
+    size: "2",
+    quantiy: 10,
+  },
+  {
+    id: "8",
+    size: "2",
+    quantiy: 10,
+  },
+  {
+    id: "9",
     size: "2",
     quantiy: 10,
   },
@@ -662,6 +696,7 @@ import hombody65 from "@/assets/lookbook/homebody/65.webp";
 import hombody66 from "@/assets/lookbook/homebody/66.webp";
 import hombody67 from "@/assets/lookbook/homebody/67.webp";
 import hombody68 from "@/assets/lookbook/homebody/68.webp";
+import { color } from "framer-motion";
 
 export const hombody = [
   hombody1,
