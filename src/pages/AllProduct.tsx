@@ -4,6 +4,7 @@ import ProductCard from "@/components/ProductCard";
 import SortingSelect from "@/components/SortingSelect";
 import { allProduct } from "@/db";
 import { useEffect, useState } from "react";
+import { Helmet } from "react-helmet";
 
 const AllProduct = () => {
   const [sortedProducts, setSortedProducts] = useState(allProduct);
@@ -44,6 +45,10 @@ const AllProduct = () => {
 
   return (
     <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>ALL - RAKKIU</title>
+      </Helmet>
       <div className="w-full py-2 px-10">
         <div className="flex items-center gap-6 justify-start sm:justify-end">
           <FilterPopver

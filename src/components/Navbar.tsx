@@ -12,7 +12,11 @@ const Navbar = () => {
   return (
     <>
       <div className="fixed top-0 inset-x-0 h-[4.5rem] bg-white/75 backdrop-blur-lg transition-all z-50">
-        <Link to="/" className="flex items-center justify-center z-[100]">
+        <Link
+          to="/"
+          className="flex items-center justify-center z-[100]"
+          reloadDocument
+        >
           <div className="fixed top-0 cursor-pointer">
             <img src={logoImg} alt="Logo" className="w-[8.6rem]" />
           </div>

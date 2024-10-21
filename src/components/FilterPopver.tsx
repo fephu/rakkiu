@@ -111,7 +111,10 @@ const FilterPopver = ({
             <div className="flex items-center gap-3">
               <Button
                 className="h-8 rounded-none font-normal px-4 text-xs"
-                onClick={onApplyFilter}
+                onClick={() => {
+                  setIsOpen(false);
+                  onApplyFilter();
+                }}
               >
                 Apply
               </Button>

@@ -1,9 +1,14 @@
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import ProductCarousel from "@/components/ProductCarousel";
-import { hombody } from "@/db";
+import { lookbook } from "@/db";
 import { useState } from "react";
+import { useParams } from "react-router-dom";
 
 const LookbookDetail = () => {
+  const { id } = useParams();
+
+  const lb = lookbook.find((item) => item.value === id);
+
   const [model, setModel] = useState<string>("");
 
   const handleStateChange = (newState: string) => {
@@ -13,7 +18,10 @@ const LookbookDetail = () => {
     <>
       {model !== "" && (
         <div className="fixed top-0 inset-x-0 w-full h-screen flex justify-center items-center bg-white z-[999]">
-          <ProductCarousel images={hombody} onChangeState={handleStateChange} />
+          <ProductCarousel
+            images={lb?.img || []}
+            onChangeState={handleStateChange}
+          />
         </div>
       )}
       <MaxWidthWrapper>
@@ -22,16 +30,17 @@ const LookbookDetail = () => {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-          {hombody.map((item) => (
-            <img
-              src={item}
-              alt=""
-              loading="lazy"
-              onClick={() => {
-                setModel(item);
-              }}
-            />
-          ))}
+          {lb &&
+            lb.img.map((item) => (
+              <img
+                src={item}
+                alt=""
+                loading="lazy"
+                onClick={() => {
+                  setModel(item);
+                }}
+              />
+            ))}
         </div>
       </MaxWidthWrapper>
     </>
