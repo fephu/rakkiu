@@ -31,12 +31,12 @@ const ProductCarousel = ({ images, onChangeState }: ProductCarouselProps) => {
   };
   return (
     <>
-      <div className="absolute top-4 right-4 flex items-center bg-white z-50 border border-gray-500">
+      <div className="absolute top-4 right-4 flex items-center bg-white z-50 border border-gray-200">
         <Button variant={"ghost"} size={"sm"} onClick={toggleAutoplay}>
           {isPlaying ? (
-            <Pause className="size-6" />
+            <Pause className="size-5" />
           ) : (
-            <Play className="size-6" />
+            <Play className="size-5" />
           )}
         </Button>
         <Button
@@ -47,7 +47,7 @@ const ProductCarousel = ({ images, onChangeState }: ProductCarouselProps) => {
             onChangeState("");
           }}
         >
-          <X className="size-6" />
+          <X className="size-5" />
         </Button>
       </div>
 

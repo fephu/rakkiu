@@ -8,7 +8,7 @@ const SizeGuide = () => {
       <DialogTrigger asChild>
         <Button
           variant={"link"}
-          className="w-fit underline px-0 uppercase font-semibold text-xs"
+          className="w-fit underline underline-offset-1 px-0 uppercase text-xs tracking-wide"
           size={"sm"}
         >
           Size Guide

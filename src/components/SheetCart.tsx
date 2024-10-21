@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { Button, buttonVariants } from "./ui/button";
 import { useCart } from "@/hooks/use-cart";
 import { GoTrash } from "react-icons/go";
-import { Minus, Plus } from "lucide-react";
+import { Ghost, Minus, Plus } from "lucide-react";
 import { formatPrice } from "@/lib/utils";
 import { ScrollArea } from "./ui/scroll-area";
 
@@ -19,16 +19,16 @@ const SheetCart = () => {
     <Sheet>
       <SheetTrigger>
         <div className="flex items-center gap-1">
-          <BiShoppingBag className="size-6 sm:size-8 cursor-pointer" />
+          <BiShoppingBag className="size-6 sm:size-7 cursor-pointer" />
           {itemCount !== 0 && <div className="">{itemCount}</div>}
         </div>
       </SheetTrigger>
       <SheetContent className="px-0">
-        <h1 className="text-center text-lg uppercase font-semibold border-b border-gray-300 h-10">
-          Cart
-        </h1>
         {items.length !== 0 ? (
           <div className="flex flex-col h-full pb-10">
+            <h1 className="text-center text-lg uppercase font-semibold border-b border-gray-300 h-10">
+              Cart
+            </h1>
             <ScrollArea>
               {items.map((item) => (
                 <div className="flex justify-between border-b border-gray-200 pr-4">
@@ -108,12 +108,12 @@ const SheetCart = () => {
             </div>
           </div>
         ) : (
-          <div className="flex flex-col items-center py-10 w-full h-full gap-4">
-            <span className="text-lg">No products in the cart.</span>
+          <div className="flex flex-col items-center justify-center py-10 w-full h-full gap-4">
+            <Ghost className="size-12" />
+            <span className="">No products in the cart.</span>
             <Link
               to={"/all"}
               className={buttonVariants({
-                variant: "link",
                 className:
                   "rounded-none uppercase font-normal text-sm gap-2 border-gray-900",
                 size: "sm",

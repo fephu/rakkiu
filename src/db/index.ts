@@ -603,6 +603,65 @@ import hombody6 from "@/assets/lookbook/homebody/6.webp";
 import hombody7 from "@/assets/lookbook/homebody/7.webp";
 import hombody8 from "@/assets/lookbook/homebody/8.webp";
 import hombody9 from "@/assets/lookbook/homebody/9.webp";
+import hombody10 from "@/assets/lookbook/homebody/10.webp";
+import hombody11 from "@/assets/lookbook/homebody/11.webp";
+import hombody12 from "@/assets/lookbook/homebody/12.webp";
+import hombody13 from "@/assets/lookbook/homebody/13.webp";
+import hombody14 from "@/assets/lookbook/homebody/14.webp";
+import hombody15 from "@/assets/lookbook/homebody/15.webp";
+import hombody16 from "@/assets/lookbook/homebody/16.webp";
+import hombody17 from "@/assets/lookbook/homebody/17.webp";
+import hombody18 from "@/assets/lookbook/homebody/18.webp";
+import hombody19 from "@/assets/lookbook/homebody/19.webp";
+import hombody20 from "@/assets/lookbook/homebody/20.webp";
+import hombody21 from "@/assets/lookbook/homebody/21.webp";
+import hombody22 from "@/assets/lookbook/homebody/22.webp";
+import hombody23 from "@/assets/lookbook/homebody/23.webp";
+import hombody24 from "@/assets/lookbook/homebody/24.webp";
+import hombody25 from "@/assets/lookbook/homebody/25.webp";
+import hombody26 from "@/assets/lookbook/homebody/26.webp";
+import hombody27 from "@/assets/lookbook/homebody/27.webp";
+import hombody28 from "@/assets/lookbook/homebody/28.webp";
+import hombody29 from "@/assets/lookbook/homebody/29.webp";
+import hombody30 from "@/assets/lookbook/homebody/30.webp";
+import hombody31 from "@/assets/lookbook/homebody/31.webp";
+import hombody32 from "@/assets/lookbook/homebody/32.webp";
+import hombody33 from "@/assets/lookbook/homebody/33.webp";
+import hombody34 from "@/assets/lookbook/homebody/34.webp";
+import hombody35 from "@/assets/lookbook/homebody/35.webp";
+import hombody36 from "@/assets/lookbook/homebody/36.webp";
+import hombody37 from "@/assets/lookbook/homebody/37.webp";
+import hombody38 from "@/assets/lookbook/homebody/38.webp";
+import hombody39 from "@/assets/lookbook/homebody/39.webp";
+import hombody40 from "@/assets/lookbook/homebody/40.webp";
+import hombody41 from "@/assets/lookbook/homebody/41.webp";
+import hombody42 from "@/assets/lookbook/homebody/42.webp";
+import hombody43 from "@/assets/lookbook/homebody/43.webp";
+import hombody44 from "@/assets/lookbook/homebody/44.webp";
+import hombody45 from "@/assets/lookbook/homebody/45.webp";
+import hombody46 from "@/assets/lookbook/homebody/46.webp";
+import hombody47 from "@/assets/lookbook/homebody/47.webp";
+import hombody48 from "@/assets/lookbook/homebody/48.webp";
+import hombody49 from "@/assets/lookbook/homebody/49.webp";
+import hombody50 from "@/assets/lookbook/homebody/50.webp";
+import hombody51 from "@/assets/lookbook/homebody/51.webp";
+import hombody52 from "@/assets/lookbook/homebody/52.webp";
+import hombody53 from "@/assets/lookbook/homebody/53.webp";
+import hombody54 from "@/assets/lookbook/homebody/54.webp";
+import hombody55 from "@/assets/lookbook/homebody/55.webp";
+import hombody56 from "@/assets/lookbook/homebody/56.webp";
+import hombody57 from "@/assets/lookbook/homebody/57.webp";
+import hombody58 from "@/assets/lookbook/homebody/58.webp";
+import hombody59 from "@/assets/lookbook/homebody/59.webp";
+import hombody60 from "@/assets/lookbook/homebody/60.webp";
+import hombody61 from "@/assets/lookbook/homebody/61.webp";
+import hombody62 from "@/assets/lookbook/homebody/62.webp";
+import hombody63 from "@/assets/lookbook/homebody/63.webp";
+import hombody64 from "@/assets/lookbook/homebody/64.webp";
+import hombody65 from "@/assets/lookbook/homebody/65.webp";
+import hombody66 from "@/assets/lookbook/homebody/66.webp";
+import hombody67 from "@/assets/lookbook/homebody/67.webp";
+import hombody68 from "@/assets/lookbook/homebody/68.webp";
 
 export const hombody = [
   hombody1,
@@ -614,6 +673,65 @@ export const hombody = [
   hombody7,
   hombody8,
   hombody9,
+  hombody10,
+  hombody11,
+  hombody12,
+  hombody13,
+  hombody14,
+  hombody15,
+  hombody16,
+  hombody17,
+  hombody18,
+  hombody19,
+  hombody20,
+  hombody21,
+  hombody22,
+  hombody23,
+  hombody24,
+  hombody25,
+  hombody26,
+  hombody27,
+  hombody28,
+  hombody29,
+  hombody30,
+  hombody31,
+  hombody32,
+  hombody33,
+  hombody34,
+  hombody35,
+  hombody36,
+  hombody37,
+  hombody38,
+  hombody39,
+  hombody40,
+  hombody41,
+  hombody42,
+  hombody43,
+  hombody44,
+  hombody45,
+  hombody46,
+  hombody47,
+  hombody48,
+  hombody49,
+  hombody50,
+  hombody51,
+  hombody52,
+  hombody53,
+  hombody54,
+  hombody55,
+  hombody56,
+  hombody57,
+  hombody58,
+  hombody59,
+  hombody60,
+  hombody61,
+  hombody62,
+  hombody63,
+  hombody64,
+  hombody65,
+  hombody66,
+  hombody67,
+  hombody68,
 ];
 
 export const menus = [
@@ -625,4 +743,16 @@ export const menus = [
   { label: "Bottoms", value: "bottoms" },
   { label: "Headwear", value: "headwear" },
   { label: "Bags", value: "bags" },
+];
+
+export const colors = [
+  { label: "Black", value: "black" },
+  { label: "White", value: "white" },
+  { label: "Brown", value: "brown" },
+  { label: "Blue", value: "blue" },
+  { label: "Cream", value: "cream" },
+  { label: "Navy", value: "navy" },
+  { label: "Camo", value: "camo" },
+  { label: "Beige", value: "beige" },
+  { label: "Red", value: "red" },
 ];

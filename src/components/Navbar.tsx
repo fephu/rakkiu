@@ -11,14 +11,14 @@ import SearchCommand from "./SearchCommand";
 const Navbar = () => {
   return (
     <>
-      <div className="fixed top-0 inset-x-0 h-20 bg-white/75 backdrop-blur-lg transition-all z-50">
+      <div className="fixed top-0 inset-x-0 h-[4.5rem] bg-white/75 backdrop-blur-lg transition-all z-50">
         <Link to="/" className="flex items-center justify-center z-[100]">
           <div className="fixed top-0 cursor-pointer">
-            <img src={logoImg} alt="Logo" className="w-[9rem] sm:w-[10rem]" />
+            <img src={logoImg} alt="Logo" className="w-[8.6rem]" />
           </div>
         </Link>
         <MaxWidthWrapper>
-          <div className="flex items-center justify-between h-20">
+          <div className="flex items-center justify-between h-[4.5rem]">
             <div className="hidden sm:block">
               <NavigateMenu />
             </div>

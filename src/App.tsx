@@ -23,7 +23,7 @@ const App = () => {
   return (
     <>
       <Navbar />
-      <main className="flex flex-col min-h-screen bg-white pt-20">
+      <main className="flex flex-col min-h-screen bg-white pt-16">
         <div className="flex-1 flex flex-col h-full relative">
           <Routes>
             <Route path="/" element={<Home />} />

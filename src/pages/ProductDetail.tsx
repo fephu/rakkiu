@@ -115,14 +115,16 @@ const ProductDetail = () => {
           </div>
 
           <div className="relative w-full pl-0 sm:pl-10">
-            <div className="sticky top-56 flex flex-col gap-2 w-full pb-10">
-              <span>{formatPrice(product.price)} đ</span>
+            <div className="sticky top-56 flex flex-col gap-1 w-full pb-10">
+              <span className="text-sm tracking-wide">
+                {formatPrice(product.price)} đ
+              </span>
               <SizeGuide />
 
               <select
                 name="size"
                 id="size"
-                className="border border-gray-900 w-3/4 rounded-none p-2 uppercase text-sm h-9"
+                className="border border-gray-900 w-3/4 rounded-none p-2 uppercase text-xs h-9"
                 value={selectedSize}
                 onChange={handleChangeSize}
               >
@@ -130,7 +132,7 @@ const ProductDetail = () => {
                   Select a size
                 </option>
                 {product.sizes.map((size) => (
-                  <option value={size} key={size} className="p-2">
+                  <option value={size} key={size} className="p-2 rounded-none">
                     {size}
                   </option>
                 ))}
@@ -141,7 +143,7 @@ const ProductDetail = () => {
               )}
 
               <Button
-                className="uppercase rounded-none mt-2 w-fit text-xs px-6"
+                className="uppercase rounded-none mt-2 w-fit text-xs px-4 tracking-wide"
                 onClick={() =>
                   onAddItem({
                     id: product.id,

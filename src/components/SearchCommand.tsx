@@ -17,7 +17,7 @@ const SearchCommand = () => {
   return (
     <>
       <BiSearch
-        className="size-6 sm:size-8 cursor-pointer"
+        className="size-6 sm:size-7 cursor-pointer"
         onClick={() => setIsOpen(true)}
       />
       <CommandDialog open={isOpen} onOpenChange={setIsOpen}>

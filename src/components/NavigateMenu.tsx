@@ -26,7 +26,7 @@ const NavigateMenu = () => {
           <NavigationMenuTrigger
             className={cn(navigationMenuTriggerStyle(), "px-2")}
           >
-            <span className="text-base font-normal">SHOP</span>
+            <span className="text-sm font-normal">SHOP</span>
           </NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="flex flex-col w-[200px]">
@@ -45,7 +45,7 @@ const NavigateMenu = () => {
                 <FaCaretRight />
                 {isCollection && (
                   <div
-                    className={`absolute left-[100%] top-2 flex justify-center bg-white border w-[100px] flex-col`}
+                    className={`absolute left-[100%] top-0 flex justify-center bg-white border w-[100px] flex-col`}
                   >
                     <Link
                       to={"/collection/ss24"}
@@ -97,7 +97,7 @@ const NavigateMenu = () => {
                 <FaCaretRight />
                 {isCollaboration && (
                   <div
-                    className={`absolute left-[100%] top-2 flex justify-center bg-white border w-[220px] flex-col`}
+                    className={`absolute left-[100%] top-0 flex justify-center bg-white border w-[220px] flex-col`}
                   >
                     <Link
                       to={"/collection/ss24"}
@@ -138,14 +138,14 @@ const NavigateMenu = () => {
             href="/best-seller"
             className={cn(navigationMenuTriggerStyle(), "px-2")}
           >
-            <span className="text-base font-normal">BEST SELLER</span>
+            <span className="text-sm font-normal">BEST SELLER</span>
           </NavigationMenuLink>
         </NavigationMenuItem>
         <NavigationMenuItem>
           <NavigationMenuTrigger
             className={cn(navigationMenuTriggerStyle(), "px-2")}
           >
-            <span className="text-base font-normal">FEATURES</span>
+            <span className="text-sm font-normal">FEATURES</span>
           </NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="flex flex-col w-[300px]">
