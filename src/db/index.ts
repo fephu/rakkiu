@@ -696,7 +696,6 @@ import hombody65 from "@/assets/lookbook/homebody/65.webp";
 import hombody66 from "@/assets/lookbook/homebody/66.webp";
 import hombody67 from "@/assets/lookbook/homebody/67.webp";
 import hombody68 from "@/assets/lookbook/homebody/68.webp";
-import { color } from "framer-motion";
 
 export const hombody = [
   hombody1,
