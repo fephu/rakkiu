@@ -2,8 +2,6 @@ import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 
 import backgroundHome from "@/assets/bg.webp";
 import backgroundHome1 from "@/assets/bg1.webp";
-import markImg from "@/assets/mark.webp";
-import videoSrc from "@/assets/3.mp4";
 
 import NewArrivalsCarousel from "@/components/NewArrivalsCarousel";
 import { AnimatePresence, motion } from "framer-motion";
