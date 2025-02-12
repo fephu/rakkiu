@@ -18,6 +18,9 @@ import LookbookDetail from "./pages/LookbookDetail";
 import NewProduct from "./pages/NewProduct";
 import CollectionList from "./pages/CollectionList";
 import OrderComplete from "./pages/OrderComplete";
+import NotFound from "./pages/NotFound";
+import SignUp from "./pages/auth/SignUp";
+import SignIn from "./pages/auth/SignIn";
 
 const App = () => {
   return (
@@ -30,6 +33,10 @@ const App = () => {
             <Route path="/best-seller" element={<BestSeller />} />
             <Route path="/lookbook" element={<Lookbook />} />
 
+            {/* Auth Routes */}
+            <Route path="/sign-up" element={<SignUp />} />
+            <Route path="/sign-in" element={<SignIn />} />
+
             <Route path="/lookbook">
               <Route path=":id" element={<LookbookDetail />} />
             </Route>
@@ -37,7 +44,7 @@ const App = () => {
               <Route path=":id" element={<ProductDetail />} />
             </Route>
 
-            <Route path=":category" element={<ProductCategory />} />
+            <Route path="/category/:category" element={<ProductCategory />} />
 
             <Route path="/collection">
               <Route path=":id" element={<CollectionList />} />
@@ -53,6 +60,8 @@ const App = () => {
             <Route path="/checkout" element={<Checkout />} />
             <Route path="/order-complete" element={<OrderComplete />} />
             <Route path="/shipping-exchange" element={<ShippingExchange />} />
+
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </div>
       </main>

@@ -397,7 +397,7 @@ export const allProduct = [
     sizes: ["F"],
     category: "headwear",
     collection: "ss24",
-    color: "black",
+    color: "brown",
   },
   {
     id: "13",

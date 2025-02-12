@@ -80,7 +80,7 @@ const NavigateMenu = () => {
               </div>
               {menus.map((item) => (
                 <Link
-                  to={`/${item.value}`}
+                  to={`/category/${item.value}`}
                   key={item.value}
                   className="px-4 py-2 text-sm"
                   reloadDocument

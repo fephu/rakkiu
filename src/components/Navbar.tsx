@@ -7,6 +7,7 @@ import NavigateMenu from "./NavigateMenu";
 import { Link } from "react-router-dom";
 import SheetCart from "./SheetCart";
 import SearchCommand from "./SearchCommand";
+import UserDropdown from "./UserDropdown";
 
 const Navbar = () => {
   return (
@@ -34,6 +35,7 @@ const Navbar = () => {
             <div className="flex items-center gap-2 sm:gap-4">
               <SearchCommand />
               <SheetCart />
+              <UserDropdown />
             </div>
           </div>
         </MaxWidthWrapper>

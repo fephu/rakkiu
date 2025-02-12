@@ -41,13 +41,6 @@ const Home = () => {
         >
           <MaxWidthWrapper>
             <img src={backgroundHome} alt="Background image" />
-            <div className="max-w-sm mx-auto py-10 flex items-center justify-center">
-              <img src={markImg} alt="" className="w-1/2 sm:w-full" />
-            </div>
-
-            <video autoPlay muted loop id="myVideo" playsInline>
-              <source src={videoSrc} type="video/mp4" />
-            </video>
 
             <div className="pt-8 pb-12">
               <h1 className="uppercase text-lg px-6 font-semibold tracking-tighter">

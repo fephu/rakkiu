@@ -29,6 +29,13 @@ const ProductDetail = () => {
     (prod) => prod.name.toLowerCase().replace(/\s/g, "-") === id
   );
 
+  const relatedProduct = allProduct.filter(
+    (prod) =>
+      prod.category === product?.category &&
+      prod.id !== product?.id &&
+      prod.collection === product?.collection
+  );
+
   const [message, setMessage] = useState<string>("");
   const [selectedSize, setSelectedSize] = useState<string>("");
 
@@ -99,7 +106,10 @@ const ProductDetail = () => {
               <span className="text-sm">100% cotton.</span>
               <span className="text-sm">
                 Color:{" "}
-                <span className="text-xs">{product.color.toUpperCase()}</span>
+                <span className="text-sm">
+                  {product.color.charAt(0).toUpperCase() +
+                    product.color.substring(1)}
+                </span>
               </span>
             </div>
           </div>
@@ -175,11 +185,8 @@ const ProductDetail = () => {
             Related products
           </h1>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 w-full gap-x-8 gap-y-6">
-            {allProduct &&
-              allProduct.map((product, i) => {
-                if (i > 4) {
-                  return;
-                }
+            {relatedProduct &&
+              relatedProduct.map((product, i) => {
                 return (
                   <ProductCard
                     key={i}
