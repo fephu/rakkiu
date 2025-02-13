@@ -17,13 +17,13 @@ const SignIn = () => {
               <Label className="text-muted-foreground uppercase text-xs">
                 Email
               </Label>
-              <Input className="rounded-sm h-10" placeholder="Email Address" />
+              <Input className="rounded-sm h-10" />
             </div>
             <div className="flex flex-col gap-1">
               <Label className="text-muted-foreground uppercase text-xs">
                 Password
               </Label>
-              <Input className="rounded-sm h-10" placeholder="Password" />
+              <Input className="rounded-sm h-10" type="password" />
             </div>
             <Button className="rounded-sm uppercase tracking-tight">
               Login

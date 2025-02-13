@@ -10,6 +10,8 @@ import SearchCommand from "./SearchCommand";
 import UserDropdown from "./UserDropdown";
 
 const Navbar = () => {
+  const user = null;
+
   return (
     <>
       <div className="fixed top-0 inset-x-0 h-[4.5rem] bg-white/75 backdrop-blur-lg transition-all z-50">
@@ -35,7 +37,7 @@ const Navbar = () => {
             <div className="flex items-center gap-2 sm:gap-4">
               <SearchCommand />
               <SheetCart />
-              <UserDropdown />
+              <UserDropdown user={user ?? null} />
             </div>
           </div>
         </MaxWidthWrapper>

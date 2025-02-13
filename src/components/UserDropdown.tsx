@@ -9,12 +9,16 @@ import {
 } from "./ui/dropdown-menu";
 import { Link } from "react-router-dom";
 
-const UserDropdown = () => {
-  const user = {
-    name: "Tuan Phu",
-    email: "phupt@gmail.com",
-  };
+type User = {
+  name: string;
+  email: string;
+};
 
+interface UserDropdownProps {
+  user: User | null;
+}
+
+const UserDropdown = ({ user }: UserDropdownProps) => {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger>

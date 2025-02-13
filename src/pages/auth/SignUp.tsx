@@ -14,18 +14,24 @@ const SignUp = () => {
         <form>
           <div className="flex flex-col gap-4 mt-2">
             <div className="flex flex-col gap-1">
-              <Label>Name</Label>
-              <Input className="rounded-none" />
+              <Label className="text-xs uppercase text-muted-foreground">
+                Name
+              </Label>
+              <Input className="rounded-sm" />
             </div>
             <div className="flex flex-col gap-1">
-              <Label>Email</Label>
-              <Input className="rounded-none" />
+              <Label className="text-xs uppercase text-muted-foreground">
+                Email
+              </Label>
+              <Input className="rounded-sm" />
             </div>
             <div className="flex flex-col gap-1">
-              <Label>Password</Label>
-              <Input className="rounded-none" type="password" />
+              <Label className="text-xs uppercase text-muted-foreground">
+                Password
+              </Label>
+              <Input className="rounded-sm" type="password" />
             </div>
-            <Button className="rounded-none" size={"lg"}>
+            <Button className="rounded-sm uppercase tracking-tight">
               Create
             </Button>
 
